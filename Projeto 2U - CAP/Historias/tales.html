@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales</title>
+    
+    <link rel="stylesheet" href="style_tales.css">
+    <!-- Link para adicionar o ícone na aba -->
+    <link rel="shortcut icon" href="/ico/logo.ico" type="image/x-icon">
+    <script src="script_tales.js" defer></script>
+</head>
+
+<!-- Segunda tela: Histórias -->
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Navegação -->
+        <nav class="btn">
+            <button><a href="/index.html"><img src="/img/logo.png" id="logo"></a></button>
+            <button class="historias"><a href="/Historias/tales.html">Historias</a></button>
+            <!--
+            Explicando a bagaça que eu fiz aqui: A div (dropdown_menu) é a caixa que vai guardar todo o menu suspenso,
+            já a div (dropdown_content) contém as opções de temas, ou seja, os botões. Espero que tenha dado pra entender ao menos um pouco.
+            -->
+            <div class="dropdown_menu">
+                <button class="themes" onclick="ShowThemes()">Temas</button>
+                <div id="dropthemes" class="dropdown_content">
+                    <div id="darkthemes">
+                        <button onclick="TurnDefaultD()">Padrao (Escuro)</button>
+                        <button onclick="TurnEnsoD()">Ensolarado (Escuro)</button>
+                        <button onclick="TurnFlamD()">Flamingo (Escuro)</button>
+                        <button onclick="TurnMariD()">Marino (Escuro)</button>
+                    </div>
+                    <div id="ligththemes">
+                        <button onclick="TurnDefaultL()">Padrao (Claro)</button>
+                        <button onclick="TurnEnsoL()">Ensolarado (Claro)</button>
+                        <button onclick="TurnFlamL()">Flamingo (Claro)</button>
+                        <button onclick="TurnMariL()">Marino (Claro)</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="user-space">
+                <button class=""><img src="/img/user/flamingo-user-icon.png" alt="Foto de usuário"></button>
+                <button id="userbar"><a class="username" href="/Login/login.html">Anônimo</a></button>
+                <div id="sidebar" class="sidenav">
+                        <img class="imagem" src="/img/user/flamingo-user-icon.png" alt="Foto de usuário">
+                        <a id="closebtn" href="javascript:void(0)" onclick="SideClose()">&times;</a>
+                        <p id="username" class="username"></p>
+                        <p id="userpassword" class="username"></p>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Container de cards -->
+    <div class="container">
+            <!-- Gênero 1 -->
+        <div class="cards">
+            <input type="radio" name="slide" id = "c1" checked>
+                <label for="c1" class="card" id="c1">
+                    <div class="row">
+                        <div class = "card_content">
+                            <p>BBBBBBBBBBBBBBB</p>
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c2">
+                <label for="c2" class="card" id="c2">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoStV6LIaxIlcFJbvygzFwBck010chzJvgzeZsJ-Ge_w&s">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c3">
+                <label for="c3" class="card" id="c3">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src= "">
+                        </div>
+                    </div>
+                </label>
+        </div>
+        
+            <!-- Gênero 2 -->
+        <div class="cards">
+            <input type="radio" name="slide" id = "c4">
+                <label for="c4" class="card" id="c4">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="" alt="Historia4">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c5">
+                <label for="c5" class="card" id="c5">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="" alt="Historia5">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c6">
+                <label for="c6" class="card" id="c6">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwx0aWZjXOshc5ahFMnh1qT3ELETvkvGca6LuF-El6g&s" alt="Historia6">
+                        </div>
+                    </div>
+                </label>
+        </div>
+
+            <!-- Gênero 3 -->
+        <div class="cards">
+            <input type="radio" name="slide" id = "c7">
+                <label for="c7" class="card" id="c7">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c8">
+                <label for="c8" class="card" id="c8">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c9">
+                <label for="c9" class="card" id="c9">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="">
+                        </div>
+                    </div>
+                </label>
+        </div>
+
+            <!-- Gênero 4 -->
+        <div class="cards">
+            <input type="radio" name="slide" id = "c10">
+                <label for="c10" class="card" id="c10">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="" alt="Historia4">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c11">
+                <label for="c11" class="card" id="c11">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="" alt="Historia5">
+                        </div>
+                    </div>
+                </label>
+
+            <input type="radio" name="slide" id = "c12">
+                <label for="c12" class="card" id="c12">
+                    <div class="row">
+                        <div class = "card_content">
+                            <img src="" alt="Historia6">
+                        </div>
+                    </div>
+                </label>
+        </div>
+    </div>    
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+            <!-- Informações sobre o projeto -->
+        <div class="notes">
+            <article class="description">
+                <p>
+                    Página Web desenvolvida para fins acadêmicos
+                </p>
+                <p>
+                    Universidade Maurício de Nassau - UNINASSAU
+                </p>
+                <p>
+                    <section class="copyright">Todos os direitos reservados © 2024</section>
+                </p>
+            </article>
+        </div>
+    </footer>
+
+</body>
+</html>

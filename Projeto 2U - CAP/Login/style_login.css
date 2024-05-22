@@ -1,0 +1,397 @@
+/* Link para importar a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variávies CSS */
+:root {
+    /* Fonte */
+    --fonte1: 'poppins', 'Segoe UI', 'sans-serif', 'Arial';
+
+    /* Clássico - Claro */
+    --body-bg: #fafafa;
+    --body-bg2: #dddddd;
+    --body-bg3: #565656;
+    --body-bg4: #6b6b6b;
+
+    --filter-bg: #fafafa;
+    --filter-bg2:#e8e8e8;
+
+    --icon-bg: #c1c1c1;
+
+    --body-color: #7e7e7e;
+    --card-color2: #555;
+    --icon-color: #555;
+
+    --copyright-color: #555555a4;
+
+    --nav-bg: #fafafa;
+    --nav-shadow: #dcdcdc;
+
+    --shadow: #434343;
+    --shadow2: #4343433e;
+}
+
+/* Cores para os temas */
+/* Temas escuros */
+
+/* Clássico - Escuro */
+.dark-theme:root {
+    --body-bg: #0c0c0c;
+    --body-bg2: #272727;
+    --body-bg3: #4e4e4e;
+    --body-bg4: #818181;
+
+    --filter-bg: #242424;
+    --filter-bg2:#131313;
+
+    --icon-bg: #494949;
+
+    --body-color: #a7a7a7;
+    --card-color2: #c0c0c0;
+    --icon-color: #f3f3f3;
+
+    --copyright-color: #b9b9b9a4;
+
+    --nav-bg: #242424;
+    --nav-shadow: #505050;
+
+    --shadow: #79797969;
+    --shadow2: #94949456;
+}
+
+/* Flamingo - Escuro */
+.flamingo-darktheme:root {
+    /* Bg do body */
+    --body-bg: #240201;
+    /* Degradê para o bg do footer */
+    --body-bg2: #1b0101;
+    /* Cor para o bg do .info */
+    --body-bg3: #f0807f;
+    /* Cor para o bg do .profile */
+    --body-bg4: #ee9290;
+    
+    /* Cores para o desvanescimento do filter */
+    --filter-bg: #f9ad9d;
+    --filter-bg2:#f0807f;
+
+    /* Cor para o bg do ícone do card */
+    --icon-bg: #c66161;
+    
+    /* Cor para o texto do body */
+    --body-color: #c66161;
+    /* Cor para o texto do card */
+    --card-color2: #3f0808;
+    /* Cor para o número do card */
+    --icon-color: #240201;
+
+    --copyright-color: #83403b;
+
+    /* Cor para a barra de navegação */
+    --nav-bg: #2f0404;
+    /* Sombra para a barra de navegação */
+    --nav-shadow: #ab5050;
+    /* Sombra para o card .profile */
+    --shadow: #ab5050;
+    /* Sombra para os cards e footer */
+    --shadow2: #d57878;
+}
+
+/* Ensolarado - Escuro */
+.ensolarado-darktheme:root {
+    --body-bg: #120C07;
+    --body-bg2: #ad5d0c;
+    --body-bg3: #743f0a;
+    --body-bg4: #2c1702;
+
+    --filter-bg: #120C07;
+    --filter-bg2: #120C07;
+
+    --icon-bg: #361b02;
+
+    --body-color: #db843d;
+    --card-color2: #b16221;
+    --icon-color: #b16221;
+
+    --copyright-color: #ac631f;
+
+    --nav-bg: #2c1702;
+    --nav-shadow: #582701;
+
+    --shadow: #757575;
+    --shadow2: #582701;
+}
+
+/* Marino - Escuro */
+.marino-darktheme:root {
+    --body-bg: #070912;
+    --body-bg2: #0c9aad;
+    --body-bg3: #0a3a74;
+    --body-bg4: #02052c;
+
+    --filter-bg: #070712;
+    --filter-bg2: #070812;
+
+    --icon-bg: #0c0236;
+
+    --body-color: #3d9fdb;
+    --card-color2: #21b18b;
+    --icon-color: #213eb1;
+
+    --copyright-color: #1f3eac;
+
+    --nav-bg: #0f022c;
+    --nav-shadow: #011258;
+
+    --shadow: #64746b;
+    --shadow2: #170158;
+}
+
+/* Temas claros */
+
+/* Flamingo - Claro */
+.flamingo-lighttheme:root {
+    --body-bg: #FEDDDC;
+    --body-bg2: #edcbca;
+    --body-bg3: #80110F;
+    --body-bg4: #a63533;
+
+    --filter-bg: #E5B4B3;
+    --filter-bg2: #d39897;
+
+    --icon-bg: #bc5656;
+
+    --body-color: #80110F;
+    --card-color2: #80110F;
+    --icon-color: #FEDDDC;
+
+    --copyright-color: #83403b;
+
+    --nav-bg: #f0b8b7;
+    --nav-shadow: #e68686;
+
+    --shadow: #4d100f;
+    --shadow2: #bc5656;
+}
+
+/* Ensolarado - Claro */
+.ensolarado-lighttheme:root {
+    --body-bg: #dbaa7f;
+    --body-bg2: #fc8914;
+    --body-bg3: #c57322;
+    --body-bg4: #85521b;
+    
+    --filter-bg: #f3c58f;
+    --filter-bg2:#a85201;
+    
+    --icon-bg: #ffbd7b;
+    --icon-color: #ca8e49;
+
+    --copyright-color: #743807;
+    --nav-bg: #d88c4e;
+    --nav-shadow: #6b3600;
+    
+    --shadow: #793003;
+    --shadow2: #75380a;
+}
+
+/* Marino - Claro */
+.marino-lighttheme:root {
+    --body-bg: #7fdbd3;
+    --body-bg2: #14d1fc;
+    --body-bg3: #22a5c5;
+    --body-bg4: #1b3e85;
+    
+    --filter-bg: #8ff3dc;
+    --filter-bg2:#011aa8;
+    
+    --icon-bg: #7bccff;
+    --icon-color: #49cabd;
+
+    --copyright-color: #220774;
+    --nav-bg: #4ea3d8;
+    --nav-shadow: #00176b;
+    
+    --shadow: #0f0379;
+    --shadow2: #0a4c75;
+} 
+
+
+/* Aplicado a todos os componentes */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--body-bg3);
+}
+
+/* Aplicado ao body */
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+/* Header */
+
+/* Barra de navegação */
+.btn {
+    height: 4.5em;
+    width: 100%;
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 60px 0px 60px;
+    box-shadow: 3px 3px 14px var(--nav-shadow);
+    gap: 22px;
+    align-items: center;
+    color: var(--body-color);
+}
+
+/* img#logo (manipula a imagem com id "logo" - logo do site) */
+.btn img#logo {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+
+/*Alteração de Samuel: Menu Suspenso / DropDown*/
+/*Div responsavel por manter o menu suspenso em uma unica posição*/
+.dropdown_menu {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*Div responsavel pelo conteúdo*/
+.dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 3px 3px 14px var(--nav-shadow);
+    z-index: 1;
+}
+
+/*Botões que representam cada tema*/
+.dropdown_content button {
+    color: var(--body-color);
+    background-color: var(--body-bg2);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown_content button:hover {
+    color: var(--filter-bg2);
+    background-color: var(--body-bg3);
+}
+
+/*Classe que será atribuida quando o menu for ativado*/
+.show {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* user-space (contém foto de usuário e seu nome) */
+.btn > .user-space {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* p (parágrafo do user-space) */
+.btn > .user-space > a {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--body-bg2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Aplicaado para todos os botões */
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--body-color);
+}
+
+/* Aplicado para o botão de classe paleta */
+button > .paletas {
+    height: 50px;
+}
+
+/* Quando o cursor passar por cima, mudará para "pointer" */
+button:hover {
+    cursor: pointer;
+}
+
+/* Main */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#aviso {
+    color: red;
+    font-size: 8px;
+}
+
+#foto {
+    max-width: 150px;
+    max-height: 200px;
+}
+
+/* ... */
+
+/* Footer */
+
+/* Barra inferior com notas sobre o projeto */
+.notes {
+    height: 7em;
+    width: 100%;
+    background-image: linear-gradient(90deg, var(--nav-bg), var(--body-bg2));
+    padding: 0px 60px 0px 60px;
+    box-shadow: 3px 3px 20px var(--shadow2);
+    gap: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--body-color);
+    gap: 6px;
+    text-align: center;
+}
+
+/* Description (descrição das notas) */
+.notes > .description {
+    font-size: 14px;
+}
+
+/* Copyright */
+.notes > .description > .copyright {
+    font-size: 13px;
+    color: var(--copyright-color);
+}

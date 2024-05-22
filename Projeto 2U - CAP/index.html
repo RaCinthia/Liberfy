@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberfy - Home</title>
+
+    <!-- Link para adicionar o ícone na aba -->
+    <link rel="shortcut icon" href="/ico/logo.ico" type="image/x-icon">
+    <!-- Link de referência para o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link de referência para o JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<!-- Primeira Tela: Apresentação do Site -->
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Navegação -->
+        <nav class="btn">
+            <button><a href="index.html"><img src="/img/logo.png" id="logo"></a></button>
+            <button class="historias"><a href="/Historias/tales.html">Historias</a></button>
+            <!--
+            Explicando a bagaça que eu fiz aqui: A div (dropdown_menu) é a caixa que vai guardar todo o menu suspenso,
+            já a div (dropdown_content) contém as opções de temas, ou seja, os botões. Espero que tenha dado pra entender ao menos um pouco.
+            -->
+            <div class="dropdown_menu">
+                <button class="themes" onclick="ShowThemes()">Temas</button>
+                <div id="dropthemes" class="dropdown_content">
+                    <div id="darkthemes">
+                        <button onclick="TurnDefaultD()">Padrao (Escuro)</button>
+                        <button onclick="TurnEnsoD()">Ensolarado (Escuro)</button>
+                        <button onclick="TurnFlamD()">Flamingo (Escuro)</button>
+                        <button onclick="TurnMariD()">Marino (Escuro)</button>
+                    </div>
+                    <div id="ligththemes">
+                        <button onclick="TurnDefaultL()">Padrao (Claro)</button>
+                        <button onclick="TurnEnsoL()">Ensolarado (Claro)</button>
+                        <button onclick="TurnFlamL()">Flamingo (Claro)</button>
+                        <button onclick="TurnMariL()">Marino (Claro)</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="user-space">
+                <button class=""><img src="/img/user/flamingo-user-icon.png" alt="Foto de usuário"></button>
+                <button id="userbar"><a class="username" href="/Login/login.html">Anônimo</a></button>
+                <div id="sidebar" class="sidenav">
+                        <img class="imagem" src="/img/user/flamingo-user-icon.png" alt="Foto de usuário">
+                        <a class="username" href="/Login/login.html">Anônimo</a>
+                        <a id="closebtn" href="javascript:void(0)" onclick="SideClose()">&times;</a>
+                        <p id="username" class="username"></p>
+                        <p id="userpassword" class="username"></p>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <!-- Cards com o "currículo" dos participantes da equipe -->
+        <div class="wrapper">
+            <!-- Card Container -->
+            <div class="container">
+                <!-- Card 1 -->
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card" id="c1">
+                    <!-- Filtro para "desvanecimento" da foto -->
+                    <div class="filter">
+                        <div class="row">
+                            <section class="description">
+                                <h2>Jumento</h2>
+                                <!-- Aqui vão as informações -->
+                                <article>
+
+                                    Esse é um jumento
+                                    <br>
+                                    <br>
+                                    O <span>asno é uma subespécie doméstica do asno-selvagem-africano.</span> 
+                                    É um mamífero perissodáctilo da família Equidae, cujo nome 
+                                    popular é jumento, jegue, jerico, burro ou asno-doméstico. 
+                                    De tamanho médio, focinho e orelhas compridas, é <span>utilizado 
+                                    desde a Pré-história como animal de carga.</span>
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Commodi quasi qui fugit assumenda architecto, sit quos quo! 
+                                    Quisquam, temporibus quo cumque obcaecati voluptatum aut 
+                                    amet ex sequi eius maxime et!
+
+                                </article>
+                            </section>
+                            <div class="icon">1</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Card 2 -->
+                <input type="radio" name="slide" id="c2"> 
+                <label for="c2" class="card" id="c2">
+                    <!-- Filtro para "desvanecimento" da foto -->
+                    <div class="filter">
+                        <div class="row">
+                            <section class="description">
+                                <h2>Ádrian Gabriel</h2>
+                                <!-- Aqui vão as informações -->
+                                <article>
+                                    Descrição
+                                </article>
+                            </section>
+                            <div class="icon">2</div>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Card 3 -->
+                <input type="radio" name="slide" id="c3">   
+                <label for="c3" class="card" id ="c3">
+                    <!-- Filtro para "desvanecimento" da foto -->
+                    <div class="filter">
+                        <div class="row">
+                            <section class="description">
+                                <h2>Samuel Levi</h2>
+                                <!-- Aqui vão as informações -->
+                                <article>
+                                    Descrição
+                                </article>
+                            </section>
+                            <div class="icon">3</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Sobre nós -->
+        <div class="info">
+
+            <!-- Aluno 1 -->
+            <section class="profile">
+                <img src="img/photos/ra-photo2.jpg" alt="foto - aluno 1" class="photo">
+                <!-- Descrição -->
+                <h1>Radrígyla Cinthia</h1>
+                <p class="curso">Engenharia da Computação</p>
+                <figure>
+                    <img height="40px" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    <img height="40px" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </figure>
+                <p>
+                    Contacte-me:
+                </p>
+                <nav class="social">
+                    <a href="https://www.instagram.com/ado_ra_vel/" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+                    <a href="https://www.linkedin.com/in/radrígyla-fonseca-a08050300/" /><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+                </nav>
+            </section>
+
+            <!-- Aluno 2 -->
+            <section class="profile">
+                <img src="https://s2-g1.glbimg.com/HjK83wKaNITt6pgwARtSR790uYw=/0x0:640x640/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/3/g/t0TTBRRBiYTbHv0NRFHg/whatsapp-image-2021-08-12-at-15.33.06.jpeg" alt="foto - aluno 2" class="photo">
+                <!-- Descrição -->
+                <h1>Ádrian Gabriel</h1>
+                <p class="curso">Ciências da Computação</p>
+                <figure>
+                    <img height="40px" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    <img height="40px" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </figure>
+                <p>
+                    Contacte-me:
+                </p>
+                <nav class="social">
+                    <a href="https://www.instagram.com/adrian_s_lp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+                    <span class="invisible"><a href="https://www.instagram.com/adrian_s_lp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a></span>
+                </nav>
+            </section>
+
+            <!-- Aluno 3 -->
+            <section class="profile">
+                <img src="https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/24144/medium/coco-verde-unidade_72504.jpg" alt="foto - aluno 3" class="photo">
+                <!-- Descrição -->
+                <h1>Samuel Levi</h1>
+                <p class="curso">Engenharia da Computação</p>
+                <figure>
+                    <img height="40px" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </figure>
+                
+                <p>
+                    Contacte-me:
+                </p>
+                <nav class="social">
+                    <a href="https://www.instagram.com/adrian_s_lp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+                <section class="invisible">
+                    <a href="https://www.linkedin.com/in/radrígyla-fonseca-a08050300/" /><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+                </section>
+            </nav>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- Informações sobre o projeto -->
+        <div class="notes">
+            <article class="description">
+                <p>
+                    Página Web desenvolvida para fins acadêmicos
+                </p>
+                <p>
+                    Universidade Maurício de Nassau - UNINASSAU
+                </p>
+                <p>
+                    <section class="copyright">Todos os direitos reservados © 2024</section>
+                </p>
+            </article>
+        </div>
+    </footer>
+
+</body>
+</html>
