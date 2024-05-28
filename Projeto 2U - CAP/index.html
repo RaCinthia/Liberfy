@@ -20,39 +20,15 @@
     <header>
         <!-- Navegação -->
         <nav class="btn">
-            <button><a href="index.html"><img src="/img/logo.png" id="logo"></a></button>
-            <button class="historias"><a href="/Historias/tales.html">Historias</a></button>
-            <!--
-            Explicando a bagaça que eu fiz aqui: A div (dropdown_menu) é a caixa que vai guardar todo o menu suspenso,
-            já a div (dropdown_content) contém as opções de temas, ou seja, os botões. Espero que tenha dado pra entender ao menos um pouco.
-            -->
-            <div class="dropdown_menu">
-                <button class="themes" onclick="ShowThemes()">Temas</button>
-                <div id="dropthemes" class="dropdown_content">
-                    <div id="darkthemes">
-                        <button onclick="TurnDefaultD()">Padrao (Escuro)</button>
-                        <button onclick="TurnEnsoD()">Ensolarado (Escuro)</button>
-                        <button onclick="TurnFlamD()">Flamingo (Escuro)</button>
-                        <button onclick="TurnMariD()">Marino (Escuro)</button>
-                    </div>
-                    <div id="ligththemes">
-                        <button onclick="TurnDefaultL()">Padrao (Claro)</button>
-                        <button onclick="TurnEnsoL()">Ensolarado (Claro)</button>
-                        <button onclick="TurnFlamL()">Flamingo (Claro)</button>
-                        <button onclick="TurnMariL()">Marino (Claro)</button>
-                    </div>
-                </div>
-            </div>
+            <button> <img src="/img/logo.png" id="logo" onclick="home()"></button>
+            <button class="gender-btn">Gêneros ▾</button>
+            <button class="historias" type="submit" onclick="historias()">Histórias</button>
+            <button class="paletas" type="submit" onclick="paletas()">
+                <img src="/img/pallete/flamingo-pallete-icon.png" alt="trocar tema" class="pallete">
+            </button>
             <nav class="user-space">
-                <button class=""><img src="/img/user/flamingo-user-icon.png" alt="Foto de usuário"></button>
-                <button id="userbar"><a class="username" href="/Login/login.html">Anônimo</a></button>
-                <div id="sidebar" class="sidenav">
-                        <img class="imagem" src="/img/user/flamingo-user-icon.png" alt="Foto de usuário">
-                        <a class="username" href="/Login/login.html">Anônimo</a>
-                        <a id="closebtn" href="javascript:void(0)" onclick="SideClose()">&times;</a>
-                        <p id="username" class="username"></p>
-                        <p id="userpassword" class="username"></p>
-                </div>
+                <button class=""><img src="/img/user/flamingo-user-icon.png" alt="Foto de usuário" class="user-photo" onclick="login()"></button>
+                <button><p class="username" onclick="login()">Anônimo</p></button>
             </nav>
         </nav>
     </header>
@@ -63,7 +39,7 @@
         <div class="wrapper">
             <!-- Card Container -->
             <div class="container">
-                <!-- Card 1 -->
+              <!-- Card 1 -->
                 <input type="radio" name="slide" id="c1" checked>
                 <label for="c1" class="card" id="c1">
                     <!-- Filtro para "desvanecimento" da foto -->
@@ -73,7 +49,6 @@
                                 <h2>Jumento</h2>
                                 <!-- Aqui vão as informações -->
                                 <article>
-
                                     Esse é um jumento
                                     <br>
                                     <br>
@@ -189,13 +164,14 @@
                     Contacte-me:
                 </p>
                 <nav class="social">
-                    <a href="https://www.instagram.com/adrian_s_lp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+                    <a href="https://www.instagram.com/samu.lev/" /><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
                 <section class="invisible">
                     <a href="https://www.linkedin.com/in/radrígyla-fonseca-a08050300/" /><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
                 </section>
             </nav>
             </section>
         </div>
+
     </main>
 
     <!-- Rodapé -->
